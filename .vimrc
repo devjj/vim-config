@@ -27,14 +27,14 @@ set numberwidth=4
 set equalalways " Multiple windows, when created, are equal in size
 set splitbelow splitright
 
-"Vertical split then hop to new buffer
+" Vertical split then hop to new buffer
 :noremap ,v :vsp^M^W^W<cr>
 :noremap ,h :split^M^W^W<cr>
 
 
 " Cursor highlights ***********************************************************
 set cursorline
-"set cursorcolumn
+" set cursorcolumn
 
 
 " Searching *******************************************************************
@@ -56,7 +56,6 @@ map <down> gj
 map j gj
 imap <down> <C-o>gj
 map E ge
-
 
 " Ruby stuff ******************************************************************
 compiler ruby         " Enable compiler support for ruby
@@ -80,12 +79,12 @@ map ,b :FuzzyFinderBuffer<CR>
 
 " Fuzzyfinder *****************************************************************
 " Fuzzy finder rocks, like Command-T in TextMate (buggy at moment, fix!!)
-"let g:FuzzyFinderOptions = { 'Base':{}, 'Buffer':{}, 'File':{}, 'MruFile':{}, 'FavFile':{}, 'Dir':{}, 'Tag':{}, 'TaggedFile':{}}
-"let gf:FuzzyFinderOptions.Base.abbrev_map = { "^Project-" : ["**/"], }
-"let g:FuzzyFinderOptions.Base.migemo_support = 0
-"let g:FuzzyFinderOptions.File.excluded_path = '\v\~$|\.o$|\.git/|\.DS_Store|\.exe$|\.bak$|\.swp$|((^|[/\\])\.[/\\]$)'
+" let g:FuzzyFinderOptions = { 'Base':{}, 'Buffer':{}, 'File':{}, 'MruFile':{}, 'FavFile':{}, 'Dir':{}, 'Tag':{}, 'TaggedFile':{}}
+" let gf:FuzzyFinderOptions.Base.abbrev_map = { "^Project-" : ["**/"], }
+" let g:FuzzyFinderOptions.Base.migemo_support = 0
+" let g:FuzzyFinderOptions.File.excluded_path = '\v\~$|\.o$|\.git/|\.DS_Store|\.exe$|\.bak$|\.swp$|((^|[/\\])\.[/\\]$)'
 map ,f :FuzzyFinderFile<CR>
-"map ,b :FuzzyFinderBuffer<CR>
+map ,b :FuzzyFinderBuffer<CR>
 
 " autocomplpop ***************************************************************
 " complete option
