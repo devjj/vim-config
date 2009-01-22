@@ -84,7 +84,7 @@ map ,b :FuzzyFinderBuffer<CR>
 "let gf:FuzzyFinderOptions.Base.abbrev_map = { "^Project-" : ["**/"], }
 "let g:FuzzyFinderOptions.Base.migemo_support = 0
 "let g:FuzzyFinderOptions.File.excluded_path = '\v\~$|\.o$|\.git/|\.DS_Store|\.exe$|\.bak$|\.swp$|((^|[/\\])\.[/\\]$)'
-"map ,f :FuzzyFinderFile Project-<CR>
+map ,f :FuzzyFinderFile<CR>
 "map ,b :FuzzyFinderBuffer<CR>
 
 " autocomplpop ***************************************************************
