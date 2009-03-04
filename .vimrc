@@ -13,12 +13,18 @@ set backspace=start,indent
 set hlsearch
 syntax on
 
+" Turn on line highlighting
+set cursorline
+
 " Set leader to comma
 let mapleader = ","
 
 " Set up command for FuzzyFinder Textmate
 map <leader>t :FuzzyFinderTextMate<CR>
 map <leader>b :FuzzyFinderBuffer<CR>
+
+" Set up command for NERDTree
+map <leader>n :NERDTree<CR>
 
 let g:fuzzy_ignore = "*.log"
 let g:fuzzy_matching_limit = 70
