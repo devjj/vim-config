@@ -18,3 +18,7 @@ let mapleader = ","
 
 " Set up command for FuzzyFinder Textmate
 map <leader>t :FuzzyFinderTextMate<CR>
+map <leader>b :FuzzyFinderBuffer<CR>
+
+let g:fuzzy_ignore = "*.log"
+let g:fuzzy_matching_limit = 70
