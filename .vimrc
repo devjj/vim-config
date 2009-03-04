@@ -19,12 +19,18 @@ set cursorline
 " Set leader to comma
 let mapleader = ","
 
-" Set up command for FuzzyFinder Textmate
+" Set up commands for FuzzyFinder and FuzzyFinderTextMate
 map <leader>t :FuzzyFinderTextMate<CR>
 map <leader>b :FuzzyFinderBuffer<CR>
+map <leader>f :FuzzyFinderFile<CR>
+
+" Fuzzy options
+let g:fuzzy_ignore = "*.log"
+let g:fuzzy_matching_limit = 70
 
 " Set up command for NERDTree
 map <leader>n :NERDTree<CR>
 
-let g:fuzzy_ignore = "*.log"
-let g:fuzzy_matching_limit = 70
+" Add a status line by default
+"set statusline=%F%m%r%h%w\ [FORMAT=%{&ff}]\ [TYPE=%Y]\ [ASCII=\%03.3b]\ [HEX=\%02.2B]\ [POS=%04l,%04v][%p%%]\ [LEN=%L]
+"set laststatus=2
