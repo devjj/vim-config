@@ -47,8 +47,11 @@ set incsearch
 set ignorecase
 
 " Make editing .vimrc easier
-map ,v :sp ~/.vimrc<CR>
-map <silent> ,V :source ~/.vimrc<CR>:filetype detect<CR>:exe ":echo 'vimrc reloaded'"<CR>
+map <leader>v :sp ~/.vimrc<CR>
+map <leader>V :source ~/.vimrc<CR>:filetype detect<CR>:exe ":echo 'vimrc reloaded'"<CR>
+
+" Generate a tags file in the current directory using Exuberant ctags
+map <leader>e :silent :! ctags -R<CR>:exe ":echo 'tags generated'"<CR>
 
 " Add a status line by default
 "set statusline=%F%m%r%h%w\ [FORMAT=%{&ff}]\ [TYPE=%Y]\ [ASCII=\%03.3b]\ [HEX=\%02.2B]\ [POS=%04l,%04v][%p%%]\ [LEN=%L]
