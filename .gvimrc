@@ -7,3 +7,4 @@ if &background == "dark"
 endif
 set gfn=DejaVu\ Sans\ Mono\ 12
 set guioptions=egmrt
+set showtabline=2
