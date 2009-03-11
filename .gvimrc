@@ -6,3 +6,4 @@ if &background == "dark"
     set transp=8
 endif
 set gfn=DejaVu\ Sans\ Mono\ 12
+set guioptions=egmrt
