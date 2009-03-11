@@ -5,4 +5,4 @@ if &background == "dark"
     hi normal guibg=black
     set transp=8
 endif
-
+set gfn=DejaVu\ Sans\ Mono\ 12

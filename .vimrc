@@ -11,6 +11,7 @@ set backspace=start,indent
 
 " Turn on highlighted search and syntax highlighting
 set hlsearch
+set incsearch
 syntax on
 
 " Turn on line highlighting
