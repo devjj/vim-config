@@ -1,5 +1,17 @@
+" no vi compatibility
+set nocompatible
+
+" Show position in file
+set ruler
+
 " Show line numbers
 set number
+
+" Show $ at end of line and trailing space as ~
+set lcs=tab:\ \ ,eol:$,trail:~,extends:>,precedes:<
+set novisualbell  " No blinking .
+set noerrorbells  " No noise.
+set laststatus=2  " Always show status line.
 
 " Use 2 spaces for tabs, turn on automatic indenting
 set tabstop=2
