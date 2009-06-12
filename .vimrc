@@ -67,6 +67,15 @@ map <leader>e :silent :! ctags --recurse --sort=yes;sort tags > tmptags;mv tmpta
 
 filetype plugin indent on
 
+function! AckGrep(command)
+  cexpr system("ack " . a:command)
+  cw
+endfunction
+
+command! -nargs=+ -complete=file Ack call AckGrep(<q-args>)
+
+map <leader>a :Ack<space>
+
 " Add a status line by default
 "set statusline=%F%m%r%h%w\ [FORMAT=%{&ff}]\ [TYPE=%Y]\ [ASCII=\%03.3b]\ [HEX=\%02.2B]\ [POS=%04l,%04v][%p%%]\ [LEN=%L]
 "set laststatus=2

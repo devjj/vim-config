@@ -1,1 +1,1 @@
-set keywordprg=ri -T
+set keywordprg="ri -T"
