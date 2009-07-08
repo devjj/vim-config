@@ -68,7 +68,7 @@ map <leader>e :silent :! ctags --recurse --sort=yes;sort tags > tmptags;mv tmpta
 filetype plugin indent on
 
 function! AckGrep(command)
-  cexpr system("ack " . a:command)
+  cexpr system("ack -a" . a:command)
   cw
 endfunction
 
