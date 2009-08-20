@@ -27,7 +27,7 @@ set incsearch
 syntax on
 
 " Turn on line highlighting
-set cursorline
+" set cursorline " Commented out due to performance penalties
 
 " Set leader to comma
 let mapleader = ","
@@ -79,3 +79,22 @@ map <leader>a :Ack<space>
 " Add a status line by default
 "set statusline=%F%m%r%h%w\ [FORMAT=%{&ff}]\ [TYPE=%Y]\ [ASCII=\%03.3b]\ [HEX=\%02.2B]\ [POS=%04l,%04v][%p%%]\ [LEN=%L]
 "set laststatus=2
+" Session saving
+set sessionoptions=blank,buffers,curdir,folds,help,resize,tabpages,winsize
+
+" Invisible characters *********************************************************
+set listchars=trail:.,tab:>-,eol:$
+set nolist
+:noremap ,i :set list!<CR> " Toggle invisible chars"
+
+" Omni Completion
+" *************************************************************
+autocmd FileType html :set omnifunc=htmlcomplete#CompleteTags
+autocmd FileType python set omnifunc=pythoncomplete#Complete
+autocmd FileType javascript set omnifunc=javascriptcomplete#CompleteJS
+autocmd FileType css set omnifunc=csscomplete#CompleteCSS
+autocmd FileType xml set omnifunc=xmlcomplete#CompleteTags
+autocmd FileType php set omnifunc=phpcomplete#CompletePHP
+autocmd FileType c set omnifunc=ccomplete#Complete
+" May require ruby compiled in
+autocmd FileType ruby,eruby set omnifunc=rubycomplete#Complete 
