@@ -52,9 +52,6 @@ set backspace=2
 " Make backspace and cursor keys wrap accordingly"
 set whichwrap+=<,>,h,l
 
-" Set search to automatically show the next match while typing
-set incsearch
-
 " Make searches case-insensitive
 set ignorecase
 
