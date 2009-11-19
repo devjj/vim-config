@@ -27,7 +27,7 @@ set incsearch
 syntax on
 
 " Turn on line highlighting
-" set cursorline " Commented out due to performance penalties
+" set cursorline " Commented out due to poor performance
 
 " Set leader to comma
 let mapleader = ","
