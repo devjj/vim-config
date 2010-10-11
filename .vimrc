@@ -39,6 +39,9 @@ map <leader>f :FuzzyFinderFile<CR>
 map <leader>r :FuzzyFinderMruFile<CR>
 map <leader>R :ruby finder.rescan!<CR>:FuzzyFinderRemoveCache<CR>:exe ":echo 'rescan complete'"<CR>
 
+" Path cache flush for CommandT
+map <leader>T :CommandTFlush<CR>
+
 " Fuzzy options
 let g:fuzzy_ignore = "*.log"
 let g:fuzzy_matching_limit = 70
